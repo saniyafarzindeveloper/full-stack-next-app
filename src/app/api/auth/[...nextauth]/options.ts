@@ -16,7 +16,7 @@
 // It’s just a way to organize all the login-related settings in one place!
 
 import { NextAuthOptions } from "next-auth";
-import { CredentialsProvider } from "next-auth/providers/credentials";
+import  CredentialsProvider  from "next-auth/providers/credentials";
 // When You Use Curly Braces { }:
 // You’re importing a named export from a module.
 // This means the thing you’re importing was explicitly named when it was exported from the file.
@@ -105,3 +105,5 @@ export const authOptions: NextAuthOptions = {
 
   secret: process.env.NEXTAUTH_SECRET,
 };
+
+
